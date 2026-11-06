@@ -1,0 +1,162 @@
+[
+    {
+        "id": 1,
+        "name": "Auriculares inalámbricos",
+        "price": 29.99,
+        "description": "Auriculares cómodos para escuchar música.",
+        "stock": 8,
+        "category": "Tecnología"
+    },
+    {
+        "id": 2,
+        "name": "Mochila urbana",
+        "price": 24.5,
+        "description": "Mochila ligera para el día a día.",
+        "stock": 5,
+        "category": "Accesorios"
+    },
+    {
+        "id": 3,
+        "name": "Lámpara de escritorio",
+        "price": 18.75,
+        "description": "Lámpara para estudiar o trabajar.",
+        "stock": 0,
+        "category": "Hogar"
+    },
+    {
+        "id": 4,
+        "name": "Botella reutilizable",
+        "price": 12.99,
+        "description": "Botella práctica para llevar agua.",
+        "stock": 12,
+        "category": "Accesorios"
+    },
+    {
+        "id": 5,
+        "name": "Teclado inalámbrico",
+        "price": 34.99,
+        "description": "Teclado cómodo para el ordenador.",
+        "stock": 7,
+        "category": "Tecnología"
+    },
+    {
+        "id": 6,
+        "name": "Taza de cerámica",
+        "price": 9.5,
+        "description": "Taza resistente para café o té.",
+        "stock": 10,
+        "category": "Hogar"
+    },
+    {
+        "id": 7,
+        "name": "Gorra clásica",
+        "price": 14.99,
+        "description": "Gorra ajustable para cualquier ocasión.",
+        "stock": 6,
+        "category": "Accesorios"
+    },
+    {
+        "id": 8,
+        "name": "Altavoz portátil",
+        "price": 39.99,
+        "description": "Altavoz pequeño con sonido claro.",
+        "stock": 4,
+        "category": "Tecnología"
+    },
+    {
+        "id": 9,
+        "name": "Cojín decorativo",
+        "price": 16.25,
+        "description": "Cojín suave para decorar el salón.",
+        "stock": 9,
+        "category": "Hogar"
+    },
+    {
+        "id": 10,
+        "name": "Reloj de pulsera",
+        "price": 49.99,
+        "description": "Reloj sencillo para uso diario.",
+        "stock": 3,
+        "category": "Accesorios"
+    },
+    {
+        "id": 11,
+        "name": "Ratón inalámbrico",
+        "price": 19.99,
+        "description": "Ratón sencillo para el ordenador.",
+        "stock": 8,
+        "category": "Tecnología"
+    },
+    {
+        "id": 12,
+        "name": "Cuaderno",
+        "price": 4.5,
+        "description": "Cuaderno para apuntes y notas.",
+        "stock": 15,
+        "category": "Accesorios"
+    },
+    {
+        "id": 13,
+        "name": "Marco de fotos",
+        "price": 11.99,
+        "description": "Marco para decorar con tus fotos favoritas.",
+        "stock": 6,
+        "category": "Hogar"
+    },
+    {
+        "id": 14,
+        "name": "Cargador USB",
+        "price": 15.75,
+        "description": "Cargador compacto para tus dispositivos.",
+        "stock": 10,
+        "category": "Tecnología"
+    },
+    {
+        "id": 15,
+        "name": "Estuche",
+        "price": 7.99,
+        "description": "Estuche práctico para guardar lápices.",
+        "stock": 0,
+        "category": "Accesorios"
+    },
+    {
+        "id": 16,
+        "name": "Alfombrilla para ratón",
+        "price": 8.99,
+        "description": "Alfombrilla cómoda para usar con el ordenador.",
+        "stock": 9,
+        "category": "Tecnología"
+    },
+    {
+        "id": 17,
+        "name": "Vaso térmico",
+        "price": 13.5,
+        "description": "Vaso reutilizable para mantener tu bebida.",
+        "stock": 7,
+        "category": "Hogar"
+    },
+    {
+        "id": 18,
+        "name": "Bufanda de lana",
+        "price": 21.99,
+        "description": "Bufanda suave para los días fríos.",
+        "stock": 5,
+        "category": "Accesorios"
+    },
+    {
+        "id": 19,
+        "name": "Power bank",
+        "price": 27.5,
+        "description": "Batería portátil para cargar el móvil.",
+        "stock": 6,
+        "category": "Tecnología"
+    },
+    {
+        "id": 20,
+        "name": "Jarrón decorativo",
+        "price": 17.25,
+        "description": "Jarrón sencillo para decorar tu casa.",
+        "stock": 4,
+        "category": "Hogar"
+    }
+]

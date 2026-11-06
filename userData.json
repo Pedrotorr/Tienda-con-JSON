@@ -1,0 +1,10 @@
+{
+    "name": "Pedro Torres",
+    "address": {
+        "street": "calle ejemplo 123",
+        "city": "Algeciras",
+        "zip": "11207"
+    },
+    "phone": "612345678",
+    "email": "pedro.torres@example.com"
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecera">
+        <div>
+            <p class="texto-pequeño">TIENDA ONLINE</p>
+            <h1>La Tienda</h1>
+            <p id="saludo">Descubre nuestros productos</p>
+        </div>
+        <button id="boton-carrito" class="boton-carrito">
+            Ver cesta <span id="contador-carrito">0</span>
+        </button>
+    </header>
+
+    <main>
+        <section class="herramientas" aria-label="Filtros de productos">
+            <label for="buscador">Buscar</label>
+            <input type="text" id="buscador" placeholder="Nombre o descripción">
+            <label for="ordenar">Ordenar por</label>
+            <select id="ordenar">
+                <option value="nombre">Nombre (A-Z)</option>
+                <option value="precio-asc">Precio (menor a mayor)</option>
+                <option value="precio-desc">Precio (mayor a menor)</option>
+                <option value="stock-asc">Stock (menor a mayor)</option>
+                <option value="stock-desc">Stock (mayor a menor)</option>
+            </select>
+        </section>
+
+        <nav id="categorias" class="categorias" aria-label="Categorías"></nav>
+
+        <section>
+            <h2>Productos</h2>
+            <div id="productos" class="productos"></div>
+            <p id="mensaje-productos" class="mensaje" hidden></p>
+        </section>
+
+    </main>
+
+    <div id="fondo-carrito" class="fondo-carrito" hidden>
+        <section id="zona-carrito" class="zona-carrito" role="dialog" aria-modal="true" aria-labelledby="titulo-carrito">
+            <div class="titulo-carrito">
+                <h2 id="titulo-carrito">Tu cesta</h2>
+                <button id="cerrar-carrito" class="boton-secundario">Cerrar</button>
+            </div>
+            <p id="direccion-envio" class="direccion-envio"></p>
+            <div id="contenido-carrito"></div>
+            <p id="total-carrito" class="total"></p>
+            <button id="finalizar-compra" class="finalizar-compra">Finalizar Compra</button>
+        </section>
+    </div>
+
+    <div id="aviso" class="aviso" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+body {
+    margin: 0;
+    background: #f6f7fb;
+    color: #202334;
+    font-family: Arial, sans-serif;
+}
+
+.cabecera {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 28px max(6%, calc((100% - 1100px) / 2));
+    background: #263b67;
+    color: white;
+}
+
+.cabecera h1,
+.cabecera p {
+    margin: 5px 0;
+}
+
+.texto-pequeño,
+.etiqueta {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+main {
+    width: min(1100px, 88%);
+    margin: 30px auto;
+}
+
+.herramientas {
+    display: grid;
+    grid-template-columns: auto minmax(180px, 1fr) auto minmax(170px, 220px);
+    align-items: center;
+    gap: 12px;
+    padding: 18px;
+    background: white;
+    border-radius: 10px;
+}
+
+input,
+select {
+    min-height: 40px;
+    padding: 8px 10px;
+    border: 1px solid #ccd1df;
+    border-radius: 6px;
+    font: inherit;
+}
+
+.categorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin: 22px 0;
+}
+
+button {
+    padding: 10px 14px;
+    border: 0;
+    border-radius: 6px;
+    background: #385ca2;
+    color: white;
+    cursor: pointer;
+    font: inherit;
+}
+
+button:hover {
+    background: #28477f;
+}
+
+.categoria {
+    background: white;
+    color: #263b67;
+    border: 1px solid #ccd1df;
+}
+
+.categoria.activa {
+    background: #263b67;
+    color: white;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 18px;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    min-height: 235px;
+    padding: 20px;
+    background: white;
+    border: 1px solid #e1e4ed;
+    border-radius: 10px;
+}
+
+.producto h3 {
+    margin: 8px 0;
+}
+
+.etiqueta {
+    margin: 0;
+    color: #6477a2;
+}
+
+.descripcion {
+    flex: 1;
+    line-height: 1.5;
+    color: #626779;
+}
+
+.stock {
+    color: #626779;
+    font-size: 14px;
+}
+
+.pie-producto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.boton-carrito {
+    white-space: nowrap;
+}
+
+#contador-carrito {
+    display: inline-block;
+    min-width: 22px;
+    margin-left: 5px;
+    padding: 3px 6px;
+    border-radius: 20px;
+    background: white;
+    color: #263b67;
+    font-weight: bold;
+}
+
+.zona-carrito {
+    width: min(620px, 92%);
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 16px 50px #10182d55;
+}
+
+.fondo-carrito {
+    position: fixed;
+    inset: 0;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: #10182d99;
+}
+
+.direccion-envio {
+    padding: 12px;
+    border-radius: 6px;
+    background: #f1f4fa;
+    color: #454b5d;
+    line-height: 1.5;
+}
+
+.titulo-carrito {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titulo-carrito h2 {
+    margin-top: 0;
+}
+
+.fila-carrito {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 14px 0;
+    border-bottom: 1px solid #e1e4ed;
+}
+
+.controles-cantidad {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.controles-cantidad button {
+    padding: 7px 11px;
+}
+
+.boton-secundario {
+    background: #e9edf5;
+    color: #263b67;
+}
+
+.boton-secundario:hover {
+    background: #dce2ee;
+}
+
+.total {
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.finalizar-compra {
+    display: block;
+    margin: 18px 0 0 auto;
+    background: #23835b;
+}
+
+.finalizar-compra:hover {
+    background: #176844;
+}
+
+.mensaje {
+    padding: 16px;
+    color: #626779;
+}
+
+.aviso {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 14px 18px;
+    border-radius: 8px;
+    background: #263b67;
+    color: white;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+}
+
+.aviso.visible {
+    opacity: 1;
+}
+
+@media (max-width: 700px) {
+    .herramientas {
+        grid-template-columns: 1fr;
+    }
+
+    .cabecera {
+        align-items: flex-start;
+    }
+
+    .fila-carrito {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
